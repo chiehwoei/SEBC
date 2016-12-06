@@ -37,5 +37,5 @@ https://archive.cloudera.com/cdh5/parcels/5.8.2/
 	- Install openjdk 1.7 and export java_home
 	
 ##Cloudera Cluster
-<center> <img src="3_cm_installed.png"/>
+<center> <img src="3_cm_installed.PNG"/>
 	
