@@ -16,11 +16,12 @@ Zookeeper, YARN HTTP Web-Consoles, HDFS HTTP Web-Consoles,
 ---
 ###How do you upgrade the CM agents?
 First, Upgrade CM manager. Based on how you upgrading CM manager, use the following methods to upgrade CM agents:
+
 1. Using Packages or Parcels
-		- Cloudera Manager installs Agent software 
-		- Manually install Agent software
+	- Cloudera Manager installs Agent software 
+	- Manually install Agent software
 2. Using Tarball
-		- Stop and Start CM agent by pointing to the new extracted tarballs
+	- Stop and Start CM agent by pointing to the new extracted tarballs
 
 ###Give the tsquery statement used to chart Hue's CPU utilization?
 select cpu_system_rate + cpu_user_rate where roleType=HUE_SERVER
