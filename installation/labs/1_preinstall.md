@@ -15,7 +15,7 @@ df -h
 ## to disabled THP
 vi /etc/init.d/disable-transparent-hugepages
 
-···
+```
  #!/bin/bash
  ### BEGIN INIT INFO
  # Provides:          disable-transparent-hugepages
@@ -51,7 +51,7 @@ vi /etc/init.d/disable-transparent-hugepages
      unset thp_path
      ;;
  esac
-···
+```
 
 sudo chmod 755 /etc/init.d/disable-transparent-hugepages
 sudo chkconfig --add disable-transparent-hugepages
