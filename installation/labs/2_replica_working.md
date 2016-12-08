@@ -1,6 +1,6 @@
 #MySQL replication
----
- SHOW SLAVE STATUS \G
+```
+SHOW SLAVE STATUS \G
 *************************** 1. row ***************************
                Slave_IO_State: Waiting for master to send event
                   Master_Host: cwcdh1.cwdomain.local
@@ -16,14 +16,17 @@
             Slave_SQL_Running: Yes
 
 			
-			
+```			
+
 ##Issue during configuration
 mysql> SHOW MASTER STATUS;		#does not show filename and offset
 
 ###solved
+```
 Added the binary log file and server id
 vi /etc/my.cnf
 
 [mysqld]
 log-bin=mysql-bin
 server-id=1
+```
