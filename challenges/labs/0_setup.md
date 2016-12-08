@@ -50,7 +50,7 @@ cat /etc/passwd | grep bavaria
 bavaria:x:2700:1002::/home/bavaria:/bin/bash
 ```
 
-## Cloudera Repo 
+## Yum Repolist
 ```
 yum repolist enabled
 Loaded plugins: fastestmirror
