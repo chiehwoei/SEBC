@@ -36,18 +36,24 @@ tmpfs           1.6G     0  1.6G   0% /run/user/0
 
 ## Add linux user accordingly.
 ```
-sudo groupadd democratic
-sudo groupadd social
-sudo useradd bavaria -u 2700 -g social
-sudo useradd saxony -u 2800 -g social
+sudo groupadd shops
+sudo groupadd walks
+sudo useradd raffles -u 2700 -g walks
+sudo useradd orchard -u 2800 -g shops
 ```
 ```
-cat /etc/passwd | grep saxony
+cat /etc/passwd | grep raffles
 saxony:x:2800:1001::/home/saxony:/bin/bash
 ```
 ```
-cat /etc/passwd | grep bavaria
+cat /etc/passwd | grep orchard
 bavaria:x:2700:1002::/home/bavaria:/bin/bash
+```
+```
+[root@newcwcdh1 centos]# cat /etc/group | grep walks
+walks:x:1004:
+[root@newcwcdh1 centos]# cat /etc/group | grep shops
+shops:x:1003:
 ```
 
 ## Yum Repolist
