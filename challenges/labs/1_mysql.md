@@ -35,3 +35,4 @@ mysql> show databases;
 11 rows in set (0.00 sec)
 
 ```
+The `amon` database is only used as job history for the MapReduce service.
